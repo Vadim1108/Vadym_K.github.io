@@ -9,10 +9,6 @@ body {
 
 }
 
-a {
-    color: #eff1e3;
-}
-
 .avatar {
     width: 160px;
     border-radius: 34px;
@@ -45,3 +41,5 @@ a {
 .title-text {
     margin-left: 20px;
 }
+
+
