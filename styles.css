@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 body {
-    background-color: #2e363c;
-    color: #eff1e3;
+    background-color: #000000;
+    color: #a0a0a5;
 
-    font-size: 18px;
-    font-family: 'Lora', serif;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -16,21 +16,32 @@ a {
 .avatar {
     width: 160px;
     border-radius: 34px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .container {
     max-width: 100%;
-    margin: 50px;
+    margin: 75px;
 }
 
 .card {
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Lora', serif;
+    color: #f2f2fa;
     padding-left: 20px;
     padding-top: 5px;
     padding-bottom: 20px;
     padding-right: 20px;
-    background: #4e5c66;
+    background: #2a2a2a;
     margin-bottom: 20px;
     border-radius: 22px;
     
+}
+
+.title {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.title-text {
+    margin-left: 20px;
 }
