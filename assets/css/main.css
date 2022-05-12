@@ -1,33 +1,23 @@
-/* Для подключения шрифтов */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Mono:wght@300&display=swap');
-
-/* Удаление всех отступов */
 * {
     margin: 0;
     padding: 0;
 }
-
-/* Убираем подчеркивания для ссылок меню */
 a {
      text-decoration: none;
 }
 li{
     list-style: none;
 }
-
-/* Подключаем шрифт Open Sans для всего документа */
 body{
     font-family:'Open Sans', sans-serif;
+    min-width: 1400px;
 }
-
-/* Задаем параметры для блока header */
 header {
     background-color: black;
     width: 100%;
     display: flex;
 }
-
-/* Задаем параметры для логотипа на шапке справа */
 .header_logo {
     text-transform: uppercase;
     color: white;
@@ -36,70 +26,52 @@ header {
     margin-top: 56px;
     margin-left: 12%;
 }
-
-/* Задаем расположение блока навигации */
 nav {
      margin-top: 56px; 
      margin-left: 29%;
 }
-
-/* Задаем параметры для ссылок меню в блоке навигации */
 .topnav a{
     color: white;
     text-align: center;
-    padding: 12px 36px;
+    padding: 12px 28px;
+    margin: 0 16px;
     font-size: 14px;
     font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
 }
-
-/* Добавляем подчеркивание при наведении на ссылку блока меню */
-.topnav a:hover {
+.topnav a:hover{
     border-bottom: 3px solid #fcac45;
 }
-
-/* Отключаем отображение значка меню при стандартном виде экрана */
 .topnav .icon {
      display: none;
 }
-
-/* Задаем размещение основных блоков */
 main {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-
-/* Задаем параметры блока main_welcome включая отступы */
 main .main_welcome {
     background-color: black;
     text-align: center;
     padding: 200px 0 310px 0;
 }
-
-/* Обработка заголовков в блоке main_welcome */
 main .main_welcome h1{
     color: grey;
     font-size: 44px;
 }
-
-/* Задание параметров для блока-контейнера в котором еще 2 других блока */
 .wrapper{
     display: block;
     margin: 0 auto;
 }
-
-/* Добавление отступов для блока main_about*/
 main .main_about{
     display: flex ;
     padding: 100px 0 100px 0;
 }
-
-/* Добавление отступа для блока about_right */
 .about_right{
     margin-left: 150px;
 }
-
-/* Обработка изображения в блоке main_about (скругление углов и добавления тени) */
 .mv-100 {
     width: 250px;
     border-radius: 34px;
@@ -108,27 +80,27 @@ main .main_about{
 
 
 
-@media screen and (max-width: 1200px) {
-    
-    /* Смещаем блок навигации */
-    nav {
+/* @media screen and (max-width: 1200px) {
+        nav {
         margin-left: 20%;
     }
-}
-@media screen and (max-width: 1105px) {
+} */
+/* @media screen and (max-width: 1105px) {
     
-    /* Смещаем блок навигации */
     nav {
         margin-left: 10%;
     }
-}
-@media screen and (max-width: 1010px) {
-    /* Убираем отборажение ссылок навигационного блока */
+}*/
+/* @media screen and (max-width: 1010px) {
+    .header_logo{
+        display: flex;
+        font-size: 24px;
+        margin-top: 56px;
+        margin-left: 12%;
+    }
     .topnav a{
         display: none; 
-    }
-
-    /* Обрабатываем иконку меню */
+    }   
     .topnav a.icon {
         float: right;
         margin-top: -17px;
@@ -136,75 +108,52 @@ main .main_about{
         color: white ;
         font-size: 25px;
     }
-
-    /* Размещаем иконку меню вправо на всю длину */
     nav {
-        width: 100%;
+         width: 100%;
+        
     }
-
-    /* Задаем отступы для меню на маленьком экране */
     .topnav.responsive{
         position: relative;
         top: 50px;
         left: -200px;
     }
-
-    /* Задаем высоту блока header при открывании меню навигации */
-    /* Padding * 2 + высота блока текста и умножить на элементов меню и будет нужной высотой */
     header .topnav.responsive{
-        height: 220px;
+        height: 320px;
     }
-
-    /* Расположение иконки меню */
     .topnav.responsive a.icon{
         position: absolute;
         top: -50px;
         right: -200px;
     }
-
-    /* Обработка выпадающих ссылок блока меню */
     .topnav.responsive a{
          float: none;
          display: block;
          text-align: left;
     }
-
-    /* Убираем отступы блока main_welcome на маленьком экране */
     main .main_welcome{
         padding: 50px 0 50px 0;
     }
-    /* Обработка изображения в блоке main_about (скругление углов и добавления тени) */
     .mv-100 {
         min-width: 30%;
         border-radius: 34px;
         box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
     }
-
-    /* Добавление отступа для блока about_right */
     .about_right{
         margin-left: 20px;
-    }
+    } 
+} */
 
-    
-}
-
-@media screen and (max-width: 800px) {
-    
-    /* Смещаем блок навигации */
-    nav {
+/* @media screen and (max-width: 800px) {
+        nav {
         margin-left: 10%;
     }
-        /* Добавление отступа для блока about_right */
     .about_right{
         margin-left: 0;
     }
-    /* Переносим текст справа в блоке main_about под картинку */
     .main_about{
         flex-direction: column ;
         text-align: centre;
     }
-
-    /* Обработка изображения в блоке main_about (скругление углов и добавления тени) */
     .mv-100 {
         min-width: 30%;
         border-radius: 34px;
@@ -212,10 +161,9 @@ main .main_about{
         display: block;
         margin: 0 auto;
     }
-
     .about_right h1{
         padding-top: 5px;
         font-size: 28px;
         text-align: center;
     } 
-}
+} */
